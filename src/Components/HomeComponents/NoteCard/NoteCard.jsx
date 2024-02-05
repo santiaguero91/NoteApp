@@ -122,14 +122,14 @@ const NoteCard = ({
       >
         <NoteBox>
           <TypeTitle variant="h5">{title}</TypeTitle>
-          {categories.length ? <Typography variant="h6">Categories:</Typography> : ""}
+
           {/* <Divider /> */}
           {/* <Typography variant="h6">Description:</Typography> */}
           <DescriptionBox>
             <Typography>{description}</Typography>
           </DescriptionBox>
           {/* <Divider /> */}
-
+          {categories.length ? <Typography variant="h6">Categories:</Typography> : ""}
           <List
             sx={{
               width: "100%",
@@ -148,7 +148,12 @@ const NoteCard = ({
               </ListItem>
             ))}
           </List>
+          
         </NoteBox>
+
+
+
+        
       </Modal>
 
       <Modal
